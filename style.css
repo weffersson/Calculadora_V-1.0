@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=FontName');
+
+body {
+  font-family: 'Press Start 2P', cursive;
+  margin: 40px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.calculator {
+  margin: 50px auto;
+  width: 400px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  border: 10px solid rgb(73, 60, 60);
+}
+
+.display {
+  
+  height: 100px;
+  font-size: 50px;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: end;
+  padding-right: 10px;
+  background-color: #d8c1c15e;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.buttons button {
+  width: 75px;
+  height: 60px;
+  margin: 10px;
+  margin-right: 11px;
+  font-size: 24px;
+  border: none;
+  border-radius: 20px;
+  background-color: #f4f4f4;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 5px  rgba(0, 0, 0, 0.3);
+  font-family: 'Press Start 2P', cursive;
+}
+
+
+         
+.number {
+  background-image: linear-gradient(to right, #E0EAFC 0%, #CFDEF3  51%, #E0EAFC  100%);
+  transition: 0.5s;
+  background-size: 200% auto;
+ 
+}
+
+.number:hover {
+  background-position: right center;
+  color: #a1a1a1;
+  
+}
+
+.decimalN{
+  background-image: linear-gradient(to right, #E0EAFC 0%, #CFDEF3  51%, #E0EAFC  100%);
+  transition: 0.5s;
+  background-size: 200% auto; 
+}
+
+.decimalN:hover {
+  background-position: right center;
+  color: #ffffff;
+}
+
+.buttons button:hover {
+  background-color: #e6e6e6;
+}
+
+.operator {
+  background-color: #f2f2f2;
+  color: black;
+}
+
+.number {
+  background-color: #fff;
+  color: black;
+}
+
+#add {
+  background-color: chartreuse;
+}
+
+#add:hover {
+  background-color: rgb(44, 213, 6);
+
+}
+
+#subtract {
+  background-color: rgb(255, 255, 0);
+}
+
+#subtract:hover {
+  background-color: rgb(212, 212, 3);
+}
+
+#multiply {
+  background-color: rgb(0, 106, 255);
+  
+}
+
+#multiply:hover {
+  background-color: rgb(0, 83, 200);
+}
+
+#divide {
+  background-color: rgb(255, 102, 0);
+}
+
+#divide:hover {
+  background-color: rgb(206, 83, 1);
+}
+
+#equals {
+  width: 176px;
+  color: #fff;
+/**----------------------------------------------------------------------------**/
+  /** CODIGO https://gradientbuttons.colorion.co/**/
+
+  background-image: linear-gradient(to right, #348F50 0%, #56B4D3 51%, #348F50 100%);
+  transition: 0.5s;
+  background-size: 200% auto;
+  box-shadow: 0 5px  rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+/** CODIGO https://gradientbuttons.colorion.co/**/
+#equals:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+/**---------------------------------------------------------------------------**/
+#clear {
+  background-color: #f11010;
+  color: #fff;
+}
+
+#backspace {
+  background-color: #ffac06;
+  color: #333;
+}
+
+#percent {
+  background-color: #06acff;
+  color: #fff;
+}
+
+
+.animaTex {
+  animation: slide 10s linear infinite;
+}
+
+@keyframes slide {
+  from { 
+    transform: translateX(100%);  
+  }
+  to {
+   transform: translateX(-150%); 
+  }
+}
