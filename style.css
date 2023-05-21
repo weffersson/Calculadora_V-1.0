@@ -13,12 +13,11 @@ h1 {
   margin: 50px auto;
   width: 400px;
   background-color: #f2f2f2;
-  border-radius: 5px;
-  border: 10px solid rgb(73, 60, 60);
+  border-radius: 30px;
+  border: 30px solid rgb(73, 60, 60);
 }
 
 .display {
-  
   height: 100px;
   font-size: 50px;
   display: flex;
@@ -26,7 +25,7 @@ h1 {
   align-items: center;
   justify-content: end;
   padding-right: 10px;
-  background-color: #d8c1c15e;
+  background-color: #90908eeb;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -46,8 +45,6 @@ h1 {
   font-family: 'Press Start 2P', cursive;
 }
 
-
-         
 .number {
   background-image: linear-gradient(to right, #E0EAFC 0%, #CFDEF3  51%, #E0EAFC  100%);
   transition: 0.5s;
@@ -58,6 +55,8 @@ h1 {
 .number:active {
   background-position: right center;
   color: #a1a1a1;
+
+  box-shadow: 0 1px  rgba(0, 0, 0, 0.3);
   
 }
 
@@ -70,10 +69,13 @@ h1 {
 .decimalN:active {
   background-position: right center;
   color: #a1a1a1 ;
+
+  
 }
 
-.buttons button:hover{
+.buttons button:active{
   background-color: #e6e6e6;
+  box-shadow: 0 1px  rgba(0, 0, 0, 0.3);
   
 }
 
@@ -150,7 +152,7 @@ h1 {
 
 
 #equals {
-  width: 176px;
+  width: 75px;
   color: #fff;
 
   background-image: linear-gradient(to right, #348F50 0%, #56B4D3 51%, #348F50 100%);
@@ -164,7 +166,7 @@ h1 {
   background-position: right center;
   color: #fff;
   text-decoration: none;
-  width: 175px;
+  width: 74px;
   box-shadow: 0 1px  rgba(0, 0, 0, 0.3);
 }
 
@@ -178,6 +180,10 @@ h1 {
   border-radius: 10px;
 }
 
+#clear:active {
+  box-shadow: 0 1px  rgba(0, 0, 0, 0.3);
+}
+
 #backspace {
   background-color: #ffac06;
   color: #333;
@@ -186,6 +192,10 @@ h1 {
   background-size: 200% auto;
   box-shadow: 0 5px  rgba(0, 0, 0, 0.3);
   border-radius: 10px;
+}
+
+#backspace:active {
+  box-shadow: 0 1px  rgba(0, 0, 0, 0.3);
 }
 
 #percent {
@@ -198,6 +208,11 @@ h1 {
   border-radius: 10px;
 }
 
+#percent:active {
+  box-shadow: 0 1px  rgba(0, 0, 0, 0.3);
+}
+
+/*Animação display*/
 
 .animaTex {
   animation: slide 10s linear infinite;
@@ -210,4 +225,45 @@ h1 {
   to {
    transform: translateX(-150%); 
   }
+}
+
+/*Dark Mode*/
+
+.button-toggle {
+  width: max-content;
+  padding: 0 32px;
+  border-radius: 4px;
+  height: 38px;
+}
+
+body.dark-mode {
+  background-color: #000;
+  color: #fff;
+}
+
+.button-toggle-m {
+  background-color: blueviolet !important;
+  color: #fff;
+}
+
+
+         
+.button-toggle-m {
+  background-image: linear-gradient(to right, #00c3ff 0%, #ffff1c  51%, #00c3ff  100%);
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  
+ 
+  
+}
+
+.button-toggle-m:active {
+  box-shadow: 0 1px  rgba(0, 0, 0, 0.3);
+
+  background-position: right center; 
+  color: #fff;
+  text-decoration: none;
 }

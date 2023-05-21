@@ -121,8 +121,29 @@ document.getElementById("decimal").addEventListener("click", () => {
   }
 });
 
+//**script Dark Mode**/
 
+let buttonToggle = document.querySelector(".button-toggle")
+let body = document.body
+let classStyle = "dark-mode"
 
+buttonToggle.addEventListener("click", function(e) {
+    body.classList.toggle(classStyle)
+    
+});
 
+//**script button Md **/
+function modeColors(){
+  let buttonCal = document.querySelector(".button-toggle-m");
+  
+  buttonCal.addEventListener("click", function() {
+    let red = Math.floor(Math.random() * 156) + 100
+    let green = Math.floor(Math.random() * 156) + 100
+    let blue = Math.floor(Math.random() * 156) + 100
+    let alpha = Math.random() * 0.5 + 0.25;
+    display.style.backgroundColor = `rgba(${red}, ${green}, ${blue}, ${alpha})`;
 
-
+  });
+  
+}
+modeColors()
